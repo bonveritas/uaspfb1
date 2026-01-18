@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em 0 4em 0;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+.links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    font-size: 20px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+.hero-img {
+    border-radius: 1em;
+    margin-bottom: 3em;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 3em;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 0 0 5em 0;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid black;
+    background-color: white;
+}
+.card-content {
+    padding: 1em;
+}
+.card-detail {
+    padding: 1em;
+}
+.card-btn {
+    padding: 8px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em 0 4em 0;
+    font-size: 12px;
+    border-top: 1px solid black;
+}

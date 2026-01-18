@@ -1,0 +1,23 @@
+create table major (
+	majorid int auto_increment primary key,
+    majorname varchar(100) not null
+);
+
+insert into major(majorname) VALUES
+("information systems"), ("computer science"), ("accounting");
+
+create table users (
+	userid int auto_increment primary key,
+    majorid int not null,
+    username varchar(20) not null,
+    email varchar(50) not null,
+    password varchar(25) not null,
+    campus varchar(50) not null,
+    
+    foreign key (majorid) references major(majorid) on delete cascade
+);
+
+insert into users(majorid, username, email, password, campus) VALUES
+(1, "kiki11", "kiki11@gmail.com", "abc123", "kemanggisan"),
+(2, "kiki22", "kiki22@gmail.com", "abc1234", "alsut"),
+(3, "kiki33", "kiki33@gmail.com", "abc12345", "bekasi");
